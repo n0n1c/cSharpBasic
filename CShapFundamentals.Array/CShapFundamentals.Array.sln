@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CShapFundamentals.Array", "CShapFundamentals.Array\CShapFundamentals.Array.csproj", "{D7665132-8F3E-4BF1-BF45-368CA221DBDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7665132-8F3E-4BF1-BF45-368CA221DBDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7665132-8F3E-4BF1-BF45-368CA221DBDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7665132-8F3E-4BF1-BF45-368CA221DBDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7665132-8F3E-4BF1-BF45-368CA221DBDB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE984FBD-3031-4CF8-977B-6E87275B9E9D}
+	EndGlobalSection
+EndGlobal

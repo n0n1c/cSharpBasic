@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8CD298B2-C66A-4D91-AB93-3F693DA0253C}</ProjectGuid>
+    <ProjectGuid>{D7665132-8F3E-4BF1-BF45-368CA221DBDB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>cSharpFundamentals.person</RootNamespace>
-    <AssemblyName>cSharpFundamentals.person</AssemblyName>
+    <RootNamespace>CShapFundamentals.Array</RootNamespace>
+    <AssemblyName>CShapFundamentals.Array</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Arrays.cs" />
-    <Compile Include="Math\calculator.cs" />
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
