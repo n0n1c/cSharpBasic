@@ -42,6 +42,27 @@ namespace Unit6exercises
             var reverseName = new String(nameArray2);
             Console.WriteLine(reverseName);
 
+            //exercise 3
+            var array3 = new List<int>();
+
+            while (array3.Count < 5)
+            {
+                Console.WriteLine("Enter 5 number: ");
+                var input3 = Convert.ToInt32(Console.ReadLine());
+
+                if (array3.Contains(input3))
+                {
+                    Console.WriteLine("Not a unique number, try again");
+                    continue;
+                }
+                array3.Add(input3);
+            }
+            Console.WriteLine();
+            array3.Sort();
+            foreach (var number in array3)
+            {
+                Console.WriteLine(number);
+            }
         }
     }
 }
