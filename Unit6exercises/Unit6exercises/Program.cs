@@ -63,6 +63,35 @@ namespace Unit6exercises
             {
                 Console.WriteLine(number);
             }
+
+            //exercise 4
+            var numbers4 = new List<int>();
+
+            while (true)
+            {
+                Console.Write("Enter a number or type Quit to exit: ");
+                var input4 = Console.ReadLine();
+                if (input4.ToLower() == "quit")
+                    break;
+
+                numbers4.Add(Convert.ToInt32(input4));
+            }
+
+            var uniqueNum = new List<int>();
+            foreach (var number in numbers4)
+            {
+                if (!uniqueNum.Contains(number))
+                {
+                    uniqueNum.Add(number);
+                }
+            }
+
+            Console.WriteLine("These are the unique numbers: ");
+            foreach (var number in uniqueNum)
+            {
+                Console.WriteLine(number);
+            }
+
         }
     }
 }
