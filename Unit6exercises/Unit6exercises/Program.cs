@@ -11,6 +11,7 @@ namespace Unit6exercises
     {
         static void Main(string[] args)
         {
+            //exercise 1
             var namesList = new List<string>();
             while (true)
             {
@@ -31,6 +32,15 @@ namespace Unit6exercises
                 Console.WriteLine("{0} liked your post.", namesList[0]);
             else
                 Console.WriteLine();
+
+            //exercise 2
+            Console.Write("Enter a name: ");
+            var input2 = Console.ReadLine();
+
+            var nameArray2 = input2.ToCharArray();
+            Array.Reverse(nameArray2);
+            var reverseName = new String(nameArray2);
+            Console.WriteLine(reverseName);
 
         }
     }
