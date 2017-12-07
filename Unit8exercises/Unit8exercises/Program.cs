@@ -36,32 +36,62 @@ namespace Unit8exercises
 
             //Exercise 2
 
-            Console.Write("Enter a few hyphen separated numbers: ");
-            var input2 = Console.ReadLine();
+            //Console.Write("Enter a few hyphen separated numbers: ");
+            //var input2 = Console.ReadLine();
 
-            if (String.IsNullOrWhiteSpace(input2))
-                return;
+            //if (String.IsNullOrWhiteSpace(input2))
+            //    return;
 
-            var numbers2 = new List<int>();
-
-            foreach (var number in input2.Split('-'))
-                numbers2.Add(Convert.ToInt32(number));
+            //var numbers2 = new List<int>();
+            //foreach (var number in input2.Split('-'))
+            //    numbers2.Add(Convert.ToInt32(number));
             
-            var uniqueNums = new List<int>();
-            var isDuplicate = false;
-            foreach (var number in numbers2)
+            //var uniqueNums = new List<int>();
+            //var isDuplicate = false;
+            //foreach (var number in numbers2)
+            //{
+            //    if (!uniqueNums.Contains(number))
+            //        uniqueNums.Add(number);
+            //    else
+            //    {
+            //        isDuplicate = true;
+            //        break;
+            //    }
+            //}
+
+            //if (isDuplicate)
+            //    Console.WriteLine("Duplicate");
+            //exercise 3
+
+            Console.Write("Enter a 24 hour time value (e.g. 23.59): ");
+            var input3 = Console.ReadLine();
+
+            if (String.IsNullOrWhiteSpace(input3))
             {
-                if (!uniqueNums.Contains(number))
-                    uniqueNums.Add(number);
-                else
-                {
-                    isDuplicate = true;
-                    break;
-                }
+                Console.WriteLine("Invalid time!");
+                return;
+            }
+            var components = input3.Split();
+            if (components.Length > 2)
+            {
+                Console.WriteLine("Invalid time!");
+                return;
             }
 
-            if (isDuplicate)
-                Console.WriteLine("Duplicate");
+            try
+            {
+                var hour = Convert.ToInt32(components[0]);
+                var minutes = Convert.ToInt32(components[1]);
+
+                if (hour >= 0 && hour <= 23 && minutes >= 0 && minutes <= 59)
+                    Console.WriteLine("OK");
+                else Console.WriteLine("Invalid time!");
+            }
+
+            catch (Exception)
+            {
+                Console.WriteLine("Invalid time!");
+            }
         }
     }
 }
