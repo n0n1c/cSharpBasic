@@ -92,6 +92,24 @@ namespace Unit8exercises
             {
                 Console.WriteLine("Invalid time!");
             }
+
+            Console.Write("Write a few words separated by a space: ");
+            var input4 = Console.ReadLine();
+
+            if (String.IsNullOrWhiteSpace(input4))
+            {
+                Console.WriteLine("Invalid input!!!!!");
+                return;
+            }
+
+            var pascaledWords = "";
+
+            foreach (var word in input4.Split(' '))
+            {
+                var newPascal = char.ToUpper(word[0]) + word.ToLower().Substring(1);
+                pascaledWords += newPascal;
+            }
+            Console.WriteLine(pascaledWords);
         }
     }
 }
