@@ -110,6 +110,26 @@ namespace Unit8exercises
                 pascaledWords += newPascal;
             }
             Console.WriteLine(pascaledWords);
+
+            Console.Write("Enter an english word: ");
+            var input5 = Console.ReadLine();
+
+            if (String.IsNullOrWhiteSpace(input5))
+            {
+                Console.WriteLine("Invalid word!!!!");
+                return;
+            }
+
+            var lowerCaseWord = input5.ToLower();
+            var vowelCount = 0;
+            foreach (var letter in lowerCaseWord)
+            {
+                if (letter == 'a' || letter == 'e' || letter == 'i' || letter == 'o' || letter == 'u')
+                {
+                    vowelCount++;
+                }
+            }
+            Console.WriteLine(vowelCount);
         }
     }
 }
