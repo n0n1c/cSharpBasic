@@ -23,10 +23,8 @@ namespace ProceduralProgramming1a
                 numbers.Add(Convert.ToInt32(input));
             }
 
-            var uniques = GetUniqueNumbers(numbers);
-            
             Console.WriteLine("Unique numbers:");
-            foreach (var number in uniques)
+            foreach (var number in GetUniqueNumbers(numbers))
             {
                 Console.WriteLine(number);
             }
