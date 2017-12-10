@@ -80,5 +80,19 @@ namespace ProceduralProgrammingUnit8Exercises
             }
             return variableName;
         }
+
+        //exercise5
+        public int CountVowels(string word)
+        {
+            var vowels = new List<char>(new char[] {'a', 'e', 'i', 'o', 'u'});
+            var vowelsCount = 0;
+
+            foreach (var character in word.ToLower())
+            {
+                if (vowels.Contains(character))
+                    vowelsCount++;
+            }
+            return vowelsCount;
+        }
     }
 }
