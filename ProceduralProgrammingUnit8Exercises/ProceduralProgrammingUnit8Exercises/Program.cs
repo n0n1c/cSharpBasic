@@ -65,6 +65,20 @@ namespace ProceduralProgrammingUnit8Exercises
                 return false;
             }
         }
-        public 
+
+        //exercise4
+        public string GetVariableName(string input)
+        {
+            if (String.IsNullOrWhiteSpace(input))
+                return "";
+
+            var variableName = "";
+            foreach (var word in input.Split(' '))
+            {
+                var wordWithPascalCase = char.ToUpper(word[0]) + word.ToLower().Substring(1);
+                variableName += wordWithPascalCase;
+            }
+            return variableName;
+        }
     }
 }
