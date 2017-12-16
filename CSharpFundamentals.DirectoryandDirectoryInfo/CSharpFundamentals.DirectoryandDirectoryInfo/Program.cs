@@ -25,6 +25,12 @@ namespace CSharpFundamentals.DirectoryandDirectoryInfo
                 Console.WriteLine(directory);
             }
 
+            Directory.Exists("...");
+
+            var directoryInfo = new DirectoryInfo("...");
+            directoryInfo.GetFiles();
+            directoryInfo.GetDirectories();
+
         }
     }
 }
