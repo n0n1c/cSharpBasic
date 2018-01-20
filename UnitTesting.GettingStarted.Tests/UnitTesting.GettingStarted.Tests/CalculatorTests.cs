@@ -8,12 +8,13 @@ using NUnit.Framework;
 namespace UnitTesting.GettingStarted.Tests
 {
     [TestFixture]
-    public class HelloNUnit
+    public class CalculatorTests
     {
         [Test]
-        public void TestHelloNUnit()
+        public void Add_Always_ReturnsExpectedResults()
         {
-            Assert.That(true, Is.True);
+            var systemUnderTest = new Calculator();
+            Assert.That(systemUnderTest.Add(1, 2), Is.EqualTo(3));
         }
     }
 }
